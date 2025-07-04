@@ -1,4 +1,4 @@
-import * as z from "zod/v4"
+import * as z from "zod/v4";
 
 const EnvSchema = z.object({
   NODE_ENV: z.string(),
@@ -6,8 +6,8 @@ const EnvSchema = z.object({
   NEXTAUTH_SECRET: z.string(),
   AUTH_GITHUB_CLIENT_ID: z.string(),
   AUTH_GITHUB_CLIENT_SECRET: z.string(),
-})
+});
 
-export type EnvSchema = z.infer<typeof EnvSchema>
+export type EnvSchema = z.infer<typeof EnvSchema>;
 
-export default EnvSchema.parse(process.env)
+export default EnvSchema.parse(process.env);

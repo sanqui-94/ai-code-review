@@ -1,5 +1,5 @@
-import { signOut } from "next-auth/react"
-import {LogOut} from "lucide-react"
+import { signOut } from "next-auth/react";
+import { LogOut } from "lucide-react";
 
 export default function LogoutButton() {
   return (
@@ -7,6 +7,6 @@ export default function LogoutButton() {
       <LogOut />
       Logout
     </button>
-  )
-};
+  );
+}
 

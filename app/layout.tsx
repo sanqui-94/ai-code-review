@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
-import "./globals.css"
-import AppSessionProvider from "@/components/AppSessionProvider"
+import type { Metadata } from "next";
+import "./globals.css";
+import AppSessionProvider from "@/components/AppSessionProvider";
 
 export const metadata: Metadata = {
   title: "ai code reviewer",
   description: "review your snippets of code with AI",
-}
+};
 
 export default function RootLayout({
   children,
@@ -22,5 +22,5 @@ export default function RootLayout({
         </AppSessionProvider>
       </body>
     </html>
-  )
+  );
 }

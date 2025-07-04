@@ -1,14 +1,12 @@
-"use client"
-import Link from "next/link"
-import {useSession} from "next-auth/react"
-import Avatar from "@/components/AuthenticatedDropdownMenu"
+"use client";
+import Link from "next/link";
+import { useSession } from "next-auth/react";
+import Avatar from "@/components/AuthenticatedDropdownMenu";
 
 
 export default function Navbar() {
 
-  const { data: session, status } = useSession()
-
-  console.log(session)
+  const { data: session, status } = useSession();
 
   return (<div className="navbar bg-primary text-primary-content px-4">
     <div className="navbar-start">
@@ -23,5 +21,5 @@ export default function Navbar() {
       )}
     </div>
   </div>
-  )
+  );
 }

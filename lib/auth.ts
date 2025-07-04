@@ -1,6 +1,6 @@
-import NextAuth from "next-auth"
-import GitHub from "next-auth/providers/github"
-import env from "@/lib/env"
+import NextAuth from "next-auth";
+import GitHub from "next-auth/providers/github";
+import env from "@/lib/env";
 
 const authConfig = {
   providers: [
@@ -9,9 +9,9 @@ const authConfig = {
       clientSecret: env.AUTH_GITHUB_CLIENT_SECRET,
     }),
   ],
-}
+};
 
-const handler = NextAuth(authConfig)
+const handler = NextAuth(authConfig);
 
-export { handler as GET, handler as POST }
-export default authConfig
+export { handler as GET, handler as POST };
+export default authConfig;

@@ -1,5 +1,5 @@
-import Image from "next/image"
-import LogoutButton from "@/components/LogoutButton"
+import Image from "next/image";
+import LogoutButton from "@/components/LogoutButton";
 
 interface AvatarProps {
   imgSrc?: string;
@@ -25,11 +25,11 @@ export default function AuthenticatedDropdownMenu({ imgSrc, name }: Readonly<Ava
         </div>
         {name}
       </div>
-      <ul className="menu menu-sm dropdown-content bg-base-200 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+      <ul className="menu menu-sm dropdown-content bg-base-200 z-[1] mt-3 w-52 p-2 shadow">
         <li>
           <LogoutButton />
         </li>
       </ul>
     </div>
-  )
+  );
 }

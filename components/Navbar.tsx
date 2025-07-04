@@ -1,7 +1,7 @@
 "use client";
-import Link from "next/link";
 import { useSession } from "next-auth/react";
 import Avatar from "@/components/AuthenticatedDropdownMenu";
+import LoginButton from "@/components/LoginButton";
 
 
 export default function Navbar() {
@@ -17,7 +17,7 @@ export default function Navbar() {
       {status === "authenticated" ? (
         <Avatar name={session?.user?.name ?? "User"} imgSrc={session?.user?.image ?? undefined} />
       ) : (
-        <Link className="btn btn-primary" href="/api/auth/signin">Sign in</Link>
+          <LoginButton />
       )}
     </div>
   </div>

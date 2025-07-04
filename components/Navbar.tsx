@@ -17,7 +17,7 @@ export default function Navbar() {
       {status === "authenticated" ? (
         <Avatar name={session?.user?.name ?? "User"} imgSrc={session?.user?.image ?? undefined} />
       ) : (
-          <LoginButton />
+        <LoginButton />
       )}
     </div>
   </div>

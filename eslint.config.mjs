@@ -29,7 +29,7 @@ const eslintConfig = [
       '@stylistic/semi': ['error', 'always'],
       '@stylistic/quotes': ['error', 'double'],
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
-      '@stylistic/max-len': ['warning', { 'code': 120 }],
+      '@stylistic/max-len': ['error', { 'code': 120 }],
       '@stylistic/indent': ['error', 2],
       '@stylistic/object-curly-spacing': ['error', 'always'],
       '@stylistic/arrow-parens': ['error', 'always'],

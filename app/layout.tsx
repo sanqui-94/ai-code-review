@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import AppSessionProvider from "@/components/AppSessionProvider";
 
 export const metadata: Metadata = {
   title: "ai code reviewer",
@@ -15,10 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className="container mx-auto flex flex-col"
-      >
-        {children}
+      <body className="flex min-h-screen flex-col">
+        <AppSessionProvider>
+          {children}
+        </AppSessionProvider>
       </body>
     </html>
   );
